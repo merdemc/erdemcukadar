@@ -4,7 +4,7 @@ window.onload = function init() {
     setInterval(myTimer, 1000);
     function myTimer() {
       const d = new Date();
-      document.getElementById("time").innerHTML = `${d.getDate}/${d.getMonth}/${d.getFullYear} ${d.toLocaleTimeString()}`;
+      document.getElementById("time").innerHTML = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()} ${d.toLocaleTimeString()}`;
     }
   };
   
