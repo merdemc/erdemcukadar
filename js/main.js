@@ -11,10 +11,10 @@ window.onload = function init() {
 
 
 
-/* const myHeading=document.querySelector(".visitor")
+const myHeading=document.querySelector(".visitor")
 myHeading.textContent="Visitor";
 
-
+/* 
 const currentDate = new Date();
 
 
