@@ -25,3 +25,18 @@
 //git add .
 //git commit -m "published site in tne internet"
 //git push origin site
+
+
+
+// Merging branch. Merge feature branche with main
+// Check branch
+// git branch -a
+
+// Change branch
+// git checkout branch-a
+
+// We have to be on the branch that we want to merge into
+// git checkout master
+
+// git merge and then the name of the branch that we want to merge in
+// git merge branch-a
