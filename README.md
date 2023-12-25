@@ -40,3 +40,5 @@
 
 // git merge and then the name of the branch that we want to merge in
 // git merge branch-a
+
+// it log --oneline
