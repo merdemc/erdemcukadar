@@ -27,17 +27,28 @@ async function getNewItem() {
         console.log(newDogImage);
 
         // Write the new picture into the page
-        let cardDiv = document.querySelector(".card");
-        
+        //let cardDiv = document.querySelector(".card");
+         let dogImg = document.getElementById("dogImg");
         const newImg = document.createElement("img");
         newImg.setAttribute('class', "img-fluid");
         newImg.setAttribute('src', newDogImage);
-        //newImg.src=newDogImage;
+         newImg.setAttribute("id", "dogImg");
+         //newImg.src=newDogImage;
 
         //let newImg2 = `<img src="${newDogImage}" class="img-fluid">`;
-        cardDiv.innerHTML="";
-        cardDiv.appendChild(newImg);
-       
+  
+        //let newImg2 = `<img src="${newDogImage}" class="img-fluid">`;
+        // cardDiv.innerHTML="";
+        // cardDiv.appendChild(newImg);
+        dogImg.replaceWith(newImg);
+
+
+
+
+
+
+
+
         return newDogImage
 
     } catch (errors) {
