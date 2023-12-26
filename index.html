@@ -17,14 +17,16 @@
     <!-- Menu bar-->
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">myWeb</a>
+            <a href="#" class="navbar-brand">CUKADAR.NET</a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-sm-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#projects" class="nav-link">Projects</a>
@@ -35,17 +37,16 @@
                 </ul>
             </div>
 
+
         </div>
-        <div class="text-white ms-auto">
-            <a id="time" class="nav-link p-2">Time</a>
-        </div>
+
     </nav>
 
     <!-- Main content -->
     <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
-                <div class="lead text-sm-center text-lg-start">
+                <div class="lead text-center text-lg-start">
                     <h1>Hi <span class="visitor text-warning"></span> Welcome</h1>
                     <h1>I hope you are going to enjoy visiting my web site.</h1>
                     <h2>Thank you</h2>
@@ -99,18 +100,19 @@
 
     <!-- Project section. Boxes -->
 
-    <section class="p-5">
+    <section class="p-5" id="projects">
         <div class="container">
             <div class="row text-center g-5">
                 <div class="col-md">
                     <div class="card bg-dark text-light">
+                        <img src="./img/Hachiko.jpeg" class="card-img-top" alt="Hachiko dog">
                         <div class="card-body text-center">
                             <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i>
+                                <i class="bi bi-images"></i>
                             </div>
-                            <h3 class="card-title mb-3">Project 1</h3>
-                            <p class="card-text">My project 1 explanations</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                            <h3 class="card-title mb-3">API Utilisations</h3>
+                            <p class="card-text">Random dog pictures</p>
+                            <a href="./public/dogapi.html" class="btn btn-primary">Go to pictures</a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +148,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md">
-                    <img src="/img/2.jpeg" class="img-fluid" alt="image2">
+                    <img src="img/2.jpeg" class="img-fluid" alt="image2">
                 </div>
                 <div class="col-md p-5">
                     <h2>read and learn more about the project 1</h2>
@@ -184,7 +186,7 @@
                     </a>
                 </div>
                 <div class="col-md">
-                    <img src="/img/3.jpeg" class="img-fluid" alt="image3">
+                    <img src="img/3.jpeg" class="img-fluid" alt="image3">
                 </div>
             </div>
         </div>
@@ -216,14 +218,14 @@
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Can you you give me more about project 1?
+                            Can you you give me more about API usage ?
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#question">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">  <span> <a href="https://en.wikipedia.org/wiki/API">API</a></span> (Application Programming Interface) is a standart way of communication between applications, programs, computers. Restfull API is common and easy way of API communications. Any data stored in databases. These data exposed in standart way expecially in Rest API with JSON format. Allowed applications can take and use these data.
+                            For example, you can store capital cities in a database and expose these data. { "Türkiye":"Ankara","Azerbaycan":"Bakü"}
+                        </div>
                     </div>
                 </div>
                 <!-- Item 3 -->
@@ -255,7 +257,9 @@
         <p class="lead text-center text-white mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus blanditiis asperiores hic,
             accusantium vitae enim accusamus ducimus dolore. Quis, cumque consequatur! Ipsa facilis nulla cumque in
-            dignissimos est alias?
+            dignissimos est alias? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed veritatis magnam, quo
+            error consequatur mollitia dolorem perferendis odio quasi sit non optio nam eligendi recusandae ea cum amet
+            possimus iusto.
         </p>
         <div class="row g-4">
             <!-- person-1 -->
@@ -337,7 +341,7 @@
         </div>
     </section>
     <!-- Contact and Map -->
-    <section class="p-5">
+    <section class="p-5" id="about">
         <div class="container">
             <div class="row g-4">
                 <!-- Contact -->
@@ -345,29 +349,29 @@
                     <h2 class="text-center mb-4">Contact Informations</h2>
                     <ul class="list-group list-group-flush lead">
                         <li class="list-group-item">
-                            <span class="fw-bold">Main Location: </span>177. Street, Ümraniye
+                            <span class="fw-bold">Main Location: </span> İstanbul
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Mobile Phone: </span> 5423455456
+                            <span class="fw-bold">Mobile Phone: </span> +905425610364
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Email: </span>email@email.com
+                            <span class="fw-bold">Email: </span>merdemc@gmail.com
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Address:</span>Adress, İtsanbul
+                            <span class="fw-bold">Address:</span>Ümraniye, İstanbul / Türkiye
                         </li>
                         <li class="list-group-item">
                             <span class="fw-bold">Hobbies: </span>Hobbies
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Look at videos: </span><a href="https://www.youtube.com"> YouTube</a>
+                            <span class="fw-bold">Look at videos: </span><a href="https://www.youtube.com/watch?v=-F1VZe-rl3k"> YouTube</a>
                         </li>
                     </ul>
                 </div>
                 <!-- Map. Go to mapbox.com. Register, get token and use cdn for web -->
                 <div class="col-md">
                     <div id="map">
-                        <img src="img/1.jpeg" alt="map">
+                        <img src="img/cukadarli.jpeg" class="img-fluid" alt="Cukadarli Village">
                     </div>
                 </div>
             </div>
@@ -375,8 +379,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="p-5 bg-dark text-center text-white position-relative">
-        <div class="lead"> Copyright &copy; 2023 myWeb</div>
+    <footer class="p-5 bg-dark text-center text-white position-relative justify-content-between">
+        <div class="lead"> Copyright &copy; 2023 Mehmet Erdem Çukadar</div>
         <a href="#" class="position-absolute bottom-0 end-0 p-5">
             <i class="bi bi-arrow-up-circle h1"></i>
         </a>
