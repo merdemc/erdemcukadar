@@ -1,0 +1,25 @@
+/* Navbar start */
+#navbar #btn:hover {
+    /* background: #e53937;
+    color: white; */
+
+    background: white;
+    color: black;
+}
+
+.nav-item :hover {
+    background: white;
+    color: black;
+}
+
+.nav-link {
+
+    color: white;
+}
+
+/* Navbar end */
+
+.carousel-item img {
+    object-fit: contain;
+    height: 100vh;
+}

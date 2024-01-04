@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/restaurant.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css"
+        integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="../js/bootstrap.bundle.js"></script>
+    <script defer src="../js/restaurant.js"></script>
+
+    <title>Elazığ Yöresel Yemekler</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar start -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top"> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-utensils"></i>Elazığ Yöresel Lezzetler Diyarı</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarcontent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Anasayfa</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#galery">Galeri</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarMneu" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Yemekler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarMenu">
+                                <li>
+                                    <a class="dropdown-item" href="#food">Ana Yemekler</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Çorbalar</a></li>
+                                <li><a class="dropdown-item" href="#">Salatalar</a></li>
+                                <li><a class="dropdown-item" href="#">Tatalılar</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Afiyet olsun</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarFood" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gıda Ürünleri
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarFood">
+                                <li>
+                                    <a class="dropdown-item" href="#foodProducts">Kuru Gıda</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sebzeler</a></li>
+                                <li><a class="dropdown-item" href="#">Meyveler</a></li>
+                                <li><a class="dropdown-item" href="#">Süt Ürünleri</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Afiyet olsun</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#cook">Aşçılarımız</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#review">Yorumlar</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contact">İletişim</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navbar end -->
+
+        <!-- Home Section start -->
+        <section>
+            <div class="container">
+                <div class="d-flex justify-content-center py-5 m-3">
+                    <h2 class="h1 text-center">LOKANTAMIZA HOŞ GELDİNİZ</h2>
+                </div>
+
+                <div class="row text-center">
+                    <div class="class= d-sm-flex align-items-center justify-content-center gap-5">
+                        <div>
+                            <h2 class="py-5">
+                                Elazığın lezzetli <br /><span>Ev Yemekleri</span> &
+                                <span>Yöresel Ürünleri</span>
+                                <span>Burada</span>
+                            </h2>
+                            <p>
+                                Yemeklerimizi ev ortamında ihtimamla yapmaktayız. Yemeklerde
+                                kulladığımız ürünleri seçiyor ve en iyi malzemeleri kullanarak
+                                damak özenle hazırlıyoruz.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="../img/restaurant/brand/elazigyemek.jpg" alt="our menu image"
+                                class="img-fluid rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home Section end -->
+        <!-- Order and Model START -->
+
+
+
+        <div class="container py-5">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+
+
+
+        <!-- Button trigger modal -->
+        <div class="container">
+            <div class="row text-center g-5">
+
+                <div class="col-12 col-md-6">
+                    <button type="button" class="btn btn-outline-danger btn-lg">
+                        <i class="bi bi-telephone-outbound-fill"></i><a href="tel:+905425610364">+905425610364</a>
+                        <p> Siparişleriniz için arayabilirsiniz</p>
+                    </button>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#apply">
+                        <i class="bi bi-pencil-square"></i> Siparişlerinizi yazmak için tıklayınız
+                        <p>Sipariş ver</p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Order and Model END  -->
+
+        <!-- Meals sections. Cards start-->
+        <div class="container py-5" id="food">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+
+        <div class="h2 text-center">YEMEKLERİMİZ</div>
+        <div class="container py-5">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+
+        <section class="p-2">
+            <div class="container">
+                <div class="row text-center g-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-dark text-light">
+                            <img src="../img/restaurant/kebap_1.jpg" class="card-img-top" alt="meal" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Kebap</h3>
+                                <p class="card-text">Lezzetli kebaplarımız</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <a href="#" class="btn btn-outline-light">150 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/meat_1.jpg" class="card-img-top" alt="meal" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Pirzola</h3>
+                                <p class="card-text">Nefis Kuzu Pirzolalarımız</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <a href="#" class="btn btn-outline-light">175 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-dark text-light">
+                            <img src="../img/restaurant/meat_2.jpg" class="card-img-top" alt="meal" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Bonfile</h3>
+                                <p class="card-text">Nefis Dana Bonfilelerimiz</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <a href="#" class="btn btn-outline-light">225 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/sirrin_1.jpg" class="card-img-top" alt="meal" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Sırrın</h3>
+                                <p class="card-text">
+                                    Harika Bol Tereyağlı Elazığ Sırrın Yemeğimiz
+                                </p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <a href="#" class="btn btn-outline-light">95 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/pasta_1.jpg" class="card-img-top" alt="meal" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Makarna</h3>
+                                <p class="card-text">Harika Makarnalarımız</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <a href="#" class="btn btn-outline-light">75 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meals sections. Cards Ends-->
+        <div class="container py-5" id="foodProducts">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+        <!-- Food Product sections. Cards start-->
+        <div class="h2 text-center">GIDA ÜRÜNLERİMİZ</div>
+        <div class="container py-5">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+        <section class="p-2">
+            <div class="container">
+                <div class="row text-center g-5">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-dark text-light">
+                            <img src="../img/restaurant/orcik_1.png" class="card-img-top" alt="orcik" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">orcik</h3>
+                                <p class="card-text">El yapımı harika orcikler</p>
+                                <a href="#" class="btn btn-outline-light">450 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/kuru_uzum_1.png" class="card-img-top" alt="kuru üzüm" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Kuru Üzüm</h3>
+                                <p class="card-text">Elazığ üzümlerinden kurutulmuş üzümler</p>
+                                <a href="#" class="btn btn-outline-light">275 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-dark text-light">
+                            <img src="../img/restaurant/ceviz_1.png" class="card-img-top" alt="ceviz" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Ceviz</h3>
+                                <p class="card-text">Elazığ yerli cevizleri</p>
+                                <a href="#" class="btn btn-outline-light">125 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/kurufasulye_1.png" class="card-img-top" alt="kurufasulye" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Kurufasulye</h3>
+                                <p class="card-text">Yerli Kurufasulye</p>
+                                <a href="#" class="btn btn-outline-light">75 TL</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/nohut_1.png" class="card-img-top" alt="nohut" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Nohut</h3>
+                                <p class="card-text">Yerli Nohut</p>
+                                <a href="#" class="btn btn-outline-light">65 TL</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/kırmızı_mercimek_1.png" class="card-img-top" alt="kırmızı mercimek" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Kırmızı Mercimek</h3>
+                                <p class="card-text">Yerli Kırımızı Mercimek</p>
+                                <a href="#" class="btn btn-outline-light">55 TL</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/yesil_mercikmek_1.png" class="card-img-top" alt="yeşil mercimek" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Yeşil Mercimek</h3>
+                                <p class="card-text">Yerli Yeşil Mercimek</p>
+                                <a href="#" class="btn btn-outline-light">65 TL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/bulgur_1.png" class="card-img-top" alt="bulgur" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Bulgur</h3>
+                                <p class="card-text">Yerli Buğdaydan Yapılmış</p>
+                                <a href="#" class="btn btn-outline-light">45 TL</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card bg-danger text-light">
+                            <img src="../img/restaurant/princ_1.png" class="card-img-top" alt="prinç" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title mb-3">Prinç</h3>
+                                <p class="card-text">Baldo Prinç</p>
+                                <a href="#" class="btn btn-outline-light">75 TL</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Food products sections. Cards Ends-->
+        <!-- Galery start-->
+
+        <div class="container py-5" id="galery">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+        <div class="h2 text-center">RESİMLER</div>
+        <div class="container py-5">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+
+        <section class="p-2">
+            <div id="carouselGaleryControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner bg-danger py-5 mb-5">
+                    <div class="carousel-item active">
+                        <img src="../img/restaurant/breakfast_1_cheese.jpg" class="d-block w-100 img-fluid rounded"
+                            alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/breakfast_2_egg.jpg" class="d-block w-100 img-fluid rounded"
+                            alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/cake_1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/cake_2.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/fastfood_1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/fastfood_2.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/kebap_1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/meal_1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/meat_1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/meat_2.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/pasta_1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/potato_1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/salad1.jpg" class="d-block w-100 img-fluid rounded" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/restaurant/vegetables_1.jpg" class="d-block w-100 img-fluid rounded"
+                            alt="..." />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleryControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleryControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- Galery end -->
+        <!-- Contributers -->
+        <section id="cook" class="p-2 bg-danger">
+            <h2 class="text-center text-white">Aşçılarımız</h2>
+            <p class="lead text-center text-white mb-5">
+                Yemeklerimiz, el emeği göz nuru ile Gakkoşlar diyarı Elazığ'ımza
+                yöresel ürünler öncelikli kullanılarak hazırlanmaktadır.
+            </p>
+            <div class="container">
+                <div class="row text-center g-5 mb-5">
+                    <!-- person-1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="women-2"
+                                    class="rounded-circle mb-3" />
+                                <h3 class="card-title mb-3">Kebaplar - Fatma Bacı</h3>
+                                <p class="card-text">
+                                    Adana tadında nefis kebaplar ondan sorulur
+                                </p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-tiktok text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- person-2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="women-12"
+                                    class="rounded-circle mb-3" />
+                                <h3 class="card-title mb-3">Yemekler - Hacce Bacı</h3>
+                                <p class="card-text">
+                                    Lezzetli Elazığ Yöresel yemeklerinde mahirdir
+                                </p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-tiktok text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- person-3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="women-13"
+                                    class="rounded-circle mb-3" />
+                                <h3 class="card-title mb-3">Salatalar - Ayşe Abla</h3>
+                                <p class="card-text">
+                                    Mevsimine uygun lezzetli salataları afiyetle yiyiniz
+                                </p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-tiktok text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- person-4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/51.jpg" alt="women-51"
+                                    class="rounded-circle mb-3" />
+                                <h3 class="card-title mb-3">Tatlılar - Nuriye Abla</h3>
+                                <p class="card-text">
+                                    Parmağınızıdan olmamanız için tatlılardan kaçınınız
+                                    <i class="bi bi-emoji-laughing"></i>
+                                </p>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-tiktok text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Aşçı end -->
+
+        <!-- Review Section Start -->
+
+        <div class="container py-5" id="review">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+        <div class="h2 text-center">MÜŞTERİ YORUMLARI</div>
+        <div class="container py-5">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+        <section>
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-8 col-lg-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="women-12" />
+                    </div>
+                    <h2>Müşterilerimizin <br />Deneyimleri</h2>
+                    <p>
+                        Elazığ lezzetlerini deneyimlemek için mutlaka gelmenizi, görmenizi
+                        ve tatmanızı tavsiye deriz.
+                    </p>
+                </div>
+                <!--                <div class="col-12 col-md-8 col-lg-4 py-3 py-md-0" style="padding: 100px;"> -->
+                <div class="col-12 col-md-8 col-lg-4 py-3">
+
+                    <h5>
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="man-12" /><a href="#">Brad
+                            Ashly</a>
+                    </h5>
+                    <div style="color: orange">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h5 class="mt-3">
+                        <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="women-42" /><a href="#">Anna
+                            Mary</a>
+                    </h5>
+                    <div style="color: orange">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h5 class="mt-3">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="man-22" /><a href="#">Joe Man</a>
+                    </h5>
+                    <div style="color: orange">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <h5 class="mt-3">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="women-32" /><a
+                            href="#">Elizabeth Tailor</a>
+                    </h5>
+                    <div style="color: orange">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Section End -->
+
+        <!-- Contact and Map -->
+
+        <div class="container py-5" id="contact">
+            <div class="line" style="width: 100%; height: 2px; background-color: #e53937"></div>
+        </div>
+        <section class="p-5" id="about">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <!-- Contact -->
+                    <div class="col-sm-8 col-md-6 card">
+                        <h2 class="text-center mb-4 card-title">İletişim Bilgileri</h2>
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Şehir: </span> Elazığ
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Telefon: </span> +90542abcaabb
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Email: </span>eyl@gmail.com
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Address:</span>Şehit İlhanlar Caddesi
+                                No:ab, Elazığ / Türkiye
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Look at videos: </span><a
+                                    href="https://www.youtube.com/watch?v=-F1VZe-rl3k">
+                                    YouTube</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Map. Go to mapbox.com. Register, get token and use cdn for web -->
+                    <div class="col-sm-8 col-md-6">
+                        <div class="card h-100">
+                            <a href="https://www.google.com/maps/place/%C5%9Eht.+%C4%B0lhanlar+Cd.,+El%C3%A2z%C4%B1%C4%9F+Merkez%2FElaz%C4%B1%C4%9F/@38.6817418,39.2202109,17z/data=!3m1!4b1!4m6!3m5!1s0x4076c08a03713cf5:0x629654a199848b51!8m2!3d38.6817418!4d39.2202109!16s%2Fg%2F1td3k27b?entry=ttu"
+                                target="_blank">
+                                <h2 class="text-center mb-4 card-title">Haritan bakınız</h2>
+                                <img src="../img/restaurant/eyl_map.png" class="img-fluid" alt="map picture">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section start -->
+
+    <div>
+        <footer class="p-5 bg-dark text-center text-white position-relative justify-content-between">
+            <div class="col">
+                <div class="navbar-brand">
+                    <img src="../img/restaurant/brand/elazigyemek.jpg" class="img-fluid rounded-circle" alt="logo image"
+                        width="30" height="24" />
+                </div>
+                <p>Elazığ Yöresel Lezzetler Diyarı</p>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="col lead">
+                Copyright &copy; 2024 Mehmet Erdem Çukadar. All Right Reserved
+            </div>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5 text-white">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </footer>
+    </div>
+    <!-- Footer Section End -->
+
+
+    <!-- Modal START-->
+    <div class="modal fade" id="apply" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="apply">Sipariş Formu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Sipariş vermek için lütfen formu doldurunuz</p>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="firstName" class="col-form-label">İsim</label>
+                            <input type="text" id="firstName" class="form-control" placeholder="İsminiz">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="col-form-label">Soyisim</label>
+                            <input type="text" id="lastName" class="form-control" placeholder="Soyisminiz">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="text" id="email" class="form-control" placeholder="Elektrokik posta adresiniz">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">Telefon numarası</label>
+                            <input type="text" id="phone" class="form-control" placeholder="Telefon numaranız">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="col-form-label">Adresiniz</label>
+                            <textarea class="form-control" id="address" rows="3" name="text" placeholder="Adresiniz"
+                                required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="col-form-label">Sipariş Detayı</label>
+                            <textarea class="form-control" id="comment" rows="5" name="text"
+                                placeholder="Sipariş açıklaması" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sipariş Ver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal END-->
+
+</body>
+
+</html>
